@@ -13,17 +13,15 @@ html {
 }
 
 body {
+  height: 100vh;
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 10% 90%;
   grid-template-areas: "sidebar user" "sidebar main";
-  height: 100vh;
 }
 
 .user {
-  background-color: var(--light-bg);
-  color: var(--text);
   grid-area: user;
+  background-color: greenyellow;
 }
 
 .user-top {
@@ -42,8 +40,6 @@ body {
 .user-group {
   display: flex;
   align-items: center;
-
-  background-color: var(--light-bg);
 }
 
 .user-icon {
@@ -51,15 +47,28 @@ body {
   border-radius: 100px;
 }
 
+.user-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+}
+
+.user-bottom button {
+  border-radius: 100px;
+  border: none;
+  padding: 5px 10px;
+}
+
 .card {
   width: 300px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   box-shadow: 13px 13px 10px -14px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   border-left: 3px solid var(--accent-light);
   padding: 10px;
-  background-color: var(--accent-dark);
 }
 
 .card-btns {
@@ -72,7 +81,7 @@ body {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .announcements-container,
@@ -84,10 +93,9 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark-bg);
-  color: var(--text);
   padding: 50px;
   grid-area: sidebar;
+  background-color: pink;
 }
 
 .dashboard-logo {
@@ -111,8 +119,9 @@ body {
 }
 
 .main {
-  background-color: white;
+  background-color: lightblue;
   grid-area: main;
+  height: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -128,6 +137,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 20px;
+  justify-items: center;
 }
 
 .announcements {
@@ -139,7 +149,7 @@ body {
   flex-direction: column;
   gap: 10px;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .announcements-container .announcement {
@@ -152,7 +162,7 @@ body {
   padding-bottom: 0px;
 }
 
-.trending-container {
+.trending {
   grid-area: trending;
   display: flex;
   flex-direction: column;
@@ -163,9 +173,4 @@ body {
 .trending-card {
   padding-bottom: 15px;
   border-bottom: 2px solid rgba(204, 204, 204, 0.733);
-}
-
-.trending-card:last-child {
-  border-bottom: none;
-  padding-bottom: 0px;
 }
