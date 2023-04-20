@@ -15,8 +15,9 @@ html {
 body {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 10% 90%;
   grid-template-areas: "sidebar user" "sidebar main";
+  height: 100vh;
 }
 
 .user {
@@ -138,7 +139,7 @@ body {
   flex-direction: column;
   gap: 10px;
   padding: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .announcements-container .announcement {
@@ -151,6 +152,20 @@ body {
   padding-bottom: 0px;
 }
 
-.trending {
+.trending-container {
   grid-area: trending;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+}
+
+.trending-card {
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.733);
+}
+
+.trending-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
 }
