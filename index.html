@@ -1,175 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="sidebar">
-        <div class="dashboard-logo">
-            <img src="./assets/view-grid.svg" alt="" width="70px">
-            <p class="sidebar-title">Dashboard</p>
-        </div>
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>messages</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-        </ul>
-        <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-        </ul>
+      <div class="dashboard-logo">
+        <img src="./assets/view-grid.svg" alt="" />
+        <p class="sidebar-title">Dashboard</p>
+      </div>
+      <ul class="sidebar-list">
+        <li>Home</li>
+        <li>Profile</li>
+        <li>messages</li>
+        <li>Messages</li>
+        <li>History</li>
+        <li>Tasks</li>
+        <li>Communities</li>
+      </ul>
+      <ul class="sidebar-sublist">
+        <li>Settings</li>
+        <li>Support</li>
+        <li>Privacy</li>
+      </ul>
     </nav>
     <div class="user">
-        <div class="user-top">
-            <img src="./assets/magnify.svg" alt="" class="icon">
-            <!-- Search Icon -->
-            <input type="text" name="" id="">
-            <div class="user-group">
-                <!-- Notification Icon -->
-                <img src="./assets/bell-outline.svg" alt="" class="icon">
-                <img src="./assets/panda.png" alt="" class="user-icon">
-                <!-- User Icon -->
-                <!-- Username -->
-                <p class="username">AntNgo</p>
-            </div>
+      <div class="user-top">
+        <div class="search">
+          <img src="./assets/magnify.svg" alt="" class="icon" />
+          <input type="text" name="" id="" />
         </div>
-        <div class="user-bottom">
-            <div class="user-info">
-                <!-- User icon -->
-                <!-- Hello msg -->
-                <!-- Username -->
-            </div>
-            <button class="user-btn">New</button>
-            <button class="user-btn">Upload</button>
-            <button class="user-btn">Share</button>
+        <div class="user-group">
+          <!-- Notification Icon -->
+          <img src="./assets/bell-outline.svg" alt="" class="icon" />
+          <img src="./assets/panda.png" alt="" class="user-icon" />
+          <!-- User Icon -->
+          <!-- Username -->
+          <p class="username">AntNgo</p>
         </div>
+      </div>
+      <div class="user-bottom">
+        <div class="user-info">
+          <!-- User icon -->
+          <!-- Hello msg -->
+          <!-- Username -->
+        </div>
+        <button class="user-btn">New</button>
+        <button class="user-btn">Upload</button>
+        <button class="user-btn">Share</button>
+      </div>
     </div>
     <main class="main">
-        <div class="your-projects">
-            <p class="section-title">Your Projects</p>
-            <div class="card">
-                <p class="card-title">Cool Project</p>
-                <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iusto dolor ratione
-                    aspernatur fuga itaque error laborum totam recusandae quod.</p>
-                <div class="card-btns">
-                    <img src="./assets/star-plus-outline.svg" alt="">
-                    <img src="./assets/eye-plus-outline.svg" alt="">
-                    <img src="./assets/source-fork.svg" alt="">
-                </div>
+      <div class="your-projects">
+        <p class="section-title">Your Projects</p>
+        <div class="your-project-cards">
+          <div class="card">
+            <p class="card-title">Cool Project</p>
+            <p class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              iusto dolor ratione aspernatur fuga itaque error laborum totam
+              recusandae quod.
+            </p>
+            <div class="card-btns">
+              <img src="./assets/star-plus-outline.svg" alt="" />
+              <img src="./assets/eye-plus-outline.svg" alt="" />
+              <img src="./assets/source-fork.svg" alt="" />
             </div>
-            <div class="card">
-                <p class="card-title">Your 2nd Cool Project</p>
-                <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat cum
-                    dignissimos suscipit, nesciunt similique!</p>
-                <div class="card-btns">
-                    <img src="./assets/star-plus-outline.svg" alt="">
-                    <img src="./assets/eye-plus-outline.svg" alt="">
-                    <img src="./assets/source-fork.svg" alt="">
-                </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Your 2nd Cool Project</p>
+            <p class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quaerat cum dignissimos suscipit, nesciunt similique!
+            </p>
+            <div class="card-btns">
+              <img src="./assets/star-plus-outline.svg" alt="" />
+              <img src="./assets/eye-plus-outline.svg" alt="" />
+              <img src="./assets/source-fork.svg" alt="" />
             </div>
-            <div class="card">
-                <p class="card-title">Awesome Project!</p>
-                <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum
-                    reiciendis eius quia temporibus quis magnam. Consequatur, dicta.</p>
-                <div class="card-btns">
-                    <img src="./assets/star-plus-outline.svg" alt="">
-                    <img src="./assets/eye-plus-outline.svg" alt="">
-                    <img src="./assets/source-fork.svg" alt="">
-                </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Awesome Project!</p>
+            <p class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              voluptatum reiciendis eius quia temporibus quis magnam.
+              Consequatur, dicta.
+            </p>
+            <div class="card-btns">
+              <img src="./assets/star-plus-outline.svg" alt="" />
+              <img src="./assets/eye-plus-outline.svg" alt="" />
+              <img src="./assets/source-fork.svg" alt="" />
             </div>
-            <div class="card">
-                <p class="card-title">Untitled Project 3</p>
-                <p class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, vero velit. Minima!
-                </p>
-                <div class="card-btns">
-                    <img src="./assets/star-plus-outline.svg" alt="">
-                    <img src="./assets/eye-plus-outline.svg" alt="">
-                    <img src="./assets/source-fork.svg" alt="">
-                </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Untitled Project 3</p>
+            <p class="card-body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit,
+              vero velit. Minima!
+            </p>
+            <div class="card-btns">
+              <img src="./assets/star-plus-outline.svg" alt="" />
+              <img src="./assets/eye-plus-outline.svg" alt="" />
+              <img src="./assets/source-fork.svg" alt="" />
             </div>
-            <div class="card">
-                <p class="card-title">Cool Cat Photos</p>
-                <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deserunt sint
-                    asperiores officia animi.</p>
-                <div class="card-btns">
-                    <img src="./assets/star-plus-outline.svg" alt="">
-                    <img src="./assets/eye-plus-outline.svg" alt="">
-                    <img src="./assets/source-fork.svg" alt="">
-                </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Cool Cat Photos</p>
+            <p class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur deserunt sint asperiores officia animi.
+            </p>
+            <div class="card-btns">
+              <img src="./assets/star-plus-outline.svg" alt="" />
+              <img src="./assets/eye-plus-outline.svg" alt="" />
+              <img src="./assets/source-fork.svg" alt="" />
             </div>
-            <div class="card">
-                <p class="card-title">Quote Generator v2</p>
-                <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempora quaerat
-                    culpa debitis qui est eos.</p>
-                <div class="card-btns">
-                    <img src="./assets/star-plus-outline.svg" alt="">
-                    <img src="./assets/eye-plus-outline.svg" alt="">
-                    <img src="./assets/source-fork.svg" alt="">
-                </div>
+          </div>
+          <div class="card">
+            <p class="card-title">Quote Generator v2</p>
+            <p class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+              tempora quaerat culpa debitis qui est eos.
+            </p>
+            <div class="card-btns">
+              <img src="./assets/star-plus-outline.svg" alt="" />
+              <img src="./assets/eye-plus-outline.svg" alt="" />
+              <img src="./assets/source-fork.svg" alt="" />
             </div>
+          </div>
         </div>
-        <div class="announcements">
-            <p class="section-title">Announcements</p>
-            <div class="announcements-container">
-                <div class="announcement">
-                    <p class="title">Site Mainenance</p>
-                    <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quibusdam?</p>
-                </div>
-                <div class="announcement">
-                    <p class="title">Community Share Day</p>
-                    <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, incidunt.</p>
-                </div>
-                <div class="announcement">
-                    <p class="title">Update Privacy Policy</p>
-                    <p class="body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, repudiandae.</p>
-                </div>
-            </div>
+      </div>
+      <div class="announcements">
+        <p class="section-title">Announcements</p>
+        <div class="announcements-container">
+          <div class="announcement">
+            <p class="title">Site Mainenance</p>
+            <p class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              quibusdam?
+            </p>
+          </div>
+          <div class="announcement">
+            <p class="title">Community Share Day</p>
+            <p class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              incidunt.
+            </p>
+          </div>
+          <div class="announcement">
+            <p class="title">Update Privacy Policy</p>
+            <p class="body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Pariatur, repudiandae.
+            </p>
+          </div>
         </div>
-        <div class="trending">
-            <p class="section-title">Trending</p>
-            <div class="trending-container">
-                <div class="trending-card">
-                    <img src="" alt="">
-                    <div class="trending-username">
-                        <p class="main-name">@tegan</p>
-                        <p class="name-description">World Peace Builder</p>
-                    </div>
-                </div>
-                <div class="trending-card">
-                    <img src="" alt="">
-                    <div class="trending-username">
-                        <p class="main-name">@morgan</p>
-                        <p class="name-description">Super Cool Project</p>
-                    </div>
-                </div>
-                <div class="trending-card">
-                    <img src="" alt="">
-                    <div class="trending-username">
-                        <p class="main-name">@kendall</p>
-                        <p class="name-description">Life Changing App</p>
-                    </div>
-                </div>
-                <div class="trending-card">
-                    <img src="" alt="">
-                    <div class="trending-username">
-                        <p class="main-name">@alex</p>
-                        <p class="name-description">No Traffic Maker</p>
-                    </div>
-                </div>
+      </div>
+      <div class="trending">
+        <p class="section-title">Trending</p>
+        <div class="trending-container">
+          <div class="trending-card">
+            <img src="" alt="" />
+            <div class="trending-username">
+              <p class="main-name">@tegan</p>
+              <p class="name-description">World Peace Builder</p>
             </div>
+          </div>
+          <div class="trending-card">
+            <img src="" alt="" />
+            <div class="trending-username">
+              <p class="main-name">@morgan</p>
+              <p class="name-description">Super Cool Project</p>
+            </div>
+          </div>
+          <div class="trending-card">
+            <img src="" alt="" />
+            <div class="trending-username">
+              <p class="main-name">@kendall</p>
+              <p class="name-description">Life Changing App</p>
+            </div>
+          </div>
+          <div class="trending-card">
+            <img src="" alt="" />
+            <div class="trending-username">
+              <p class="main-name">@alex</p>
+              <p class="name-description">No Traffic Maker</p>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
