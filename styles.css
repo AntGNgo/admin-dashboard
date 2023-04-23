@@ -17,20 +17,20 @@ body {
 	width: 100vw;
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	grid-template-rows: 15vh 85vh;
+	grid-template-rows: 20vh 80vh;
 	grid-template-areas: 'sidebar user' 'sidebar main';
 }
 
 .user {
 	grid-area: user;
 	box-shadow: 0px 4px 9px -3px rgba(0, 0, 0, 0.75);
+	padding: 0 100px;
 }
 
 .user-top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 100px;
 	margin-top: 10px;
 }
 
@@ -64,6 +64,7 @@ body {
 	justify-content: space-between;
 	padding: 0 25px;
 	align-items: center;
+	margin-top: 10px;
 }
 
 .user-info {
@@ -72,10 +73,29 @@ body {
 	gap: 20px;
 }
 
+.user-info img {
+	border-radius: 100%;
+	width: 70px;
+}
+
+.greeting-message {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-weight: 500;
+}
+
+.greeting-username {
+	font-size: 1.5rem;
+}
+
 .user-bottom button {
 	border-radius: 100px;
 	border: none;
-	padding: 5px 10px;
+	background-color: #1992d4;
+	color: white;
+	padding: 10px 25px;
+	margin-left: 30px;
 }
 
 .card {
@@ -106,7 +126,7 @@ body {
 
 .section-title {
 	font-weight: 500;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	margin-bottom: 10px;
 }
 
@@ -122,12 +142,15 @@ body {
 	flex-direction: column;
 	padding: 30px 0 0 30px;
 	grid-area: sidebar;
-	background-color: lightblue;
+	background-color: #1992d4;
+	color: white;
 }
 
 .dashboard-logo {
 	display: flex;
 	align-items: center;
+	font-size: 1.3rem;
+	font-weight: 500;
 	margin-bottom: 40px;
 }
 
